@@ -1,0 +1,217 @@
+:root {
+  --animation: 350ms ease-in;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  cursor: pointer;
+  font-family: inherit;
+  color: currentColor;
+}
+address {
+  font-style: normal;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  background-color: #eefdff;
+}
+
+/* @media screen and (min-width: 768px) {
+  body {
+    background-color: #36231c;
+    background-image: url(../images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+} */
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 375px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 425px) {
+  .container {
+    max-width: 425px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .container {
+    max-width: 1500px;
+  }
+}
+
+.schedule-1 {
+  background-image: url(../images/desc-dark-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1279.98px) {
+  .schedule-1 {
+    height: 100vh;
+    width: 100vw;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .schedule-1 {
+    background-image: url(../images/desc-dark-2.jpg);
+  }
+}
+
+.information-text-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+.information-text {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+.resp {
+  /* font-size: 14px; */
+  font-size: 10px;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+  .information-text {
+    font-size: 16px;
+  }
+  .resp {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .information-text {
+    font-size: 24px;
+  }
+  .resp {
+    font-size: 21px;
+  }
+}
+
+.line {
+  stroke: #fff;
+}
+
+.circle {
+  fill: #fff;
+  stroke: #000;
+  transition: fill var(--animation), stroke var(--animation);
+}
+
+.circle-small {
+  fill: #000;
+}
+
+.text {
+  fill: #070707;
+  transition: fill var(--animation);
+}
+
+.text-small {
+  fill: #fff;
+}
+
+.icon:hover .circle {
+  fill: #eaf0f3;
+  stroke: #b3eaf7;
+}
+
+.icon:hover .text {
+  fill: #fafcfd;
+}
+
+.arrow-text {
+  font-size: 6px;
+  font-weight: 600;
+  text-transform: uppercase;
+  word-spacing: 1.5px;
+  font-style: italic;
+  fill: #fff;
+}
+
+.line-text {
+  fill: #fff;
+}
+
+#icon-dollar {
+  fill: #000;
+}
+
+#icon-dollar-1 {
+  fill: #ecf3ed;
+}
